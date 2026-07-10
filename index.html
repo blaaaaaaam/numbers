@@ -24,6 +24,9 @@
             .margin-top {
                 margin-top: 2em;
             }
+            .margin-topS {
+                margin-top: 1em;
+            }
             h1,
             h2 {
                 font-size: 1em;
@@ -39,12 +42,15 @@
             .about {
                 color: red;
                 font-family: sans-serif;
-                width: 100%;
+                width: max-content;
                 max-width: 50ch;
             }
             a {
                 text-decoration: none;
                 color: inherit;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
             ul {
                 list-style: none;
@@ -52,28 +58,30 @@
         </style>
     </head>
     <body>
-        <div class="about">
+        <main class="about">
             <h1>Numbers</h1>
-            <!--<p>An independent gallery</p>-->
+            <p class="margin-topS">An independent art space</p>
 
-            <ul class="margin-top">
-                <li>8 Kellett Street, <br />Kings Cross</li>
+            <ul class="margin-topS">
+                <li>8 Kellett Street, Kings Cross</li>
                 <li>
                     <a
                         href="https://www.instagram.com/6778911.451.78.0.0.4/"
                         target="_blank"
                         >Instagram</a
-                    >,
-                    <a href="mailto:letters@numbers.sydney">Email</a>
+                    >, <a href="mailto:letters@numbers.sydney">Email</a>,
+                    <a
+                        href="https://substack.com/@lettersfromnumbers"
+                        target="_blank"
+                        >Subscribe</a
+                    >
                 </li>
             </ul>
-            <h2 class="margin-top">Current Show</h2>
-            <p>Kevin McKeough, Paintings & Drawings<br />20–28 June, 2026</p>
-            <h2 class="margin-top">Upcoming</h2>
-            <p>
-                Ray Jackson Doing Time with <br />Penrith Miers Archive<br />4–26
-                July, 2026
+            <h2 class="margin-top">Current Exhibition</h2>
+            <p class="margin-topS">
+                Ray Jackson Doing Time with <br />Penrith Miers Archive<br />4
+                July – 2 August, 2026
             </p>
-        </div>
+        </main>
     </body>
 </html>
